@@ -1,0 +1,240 @@
+<!Doctype>
+<HTML>
+  <HEAD>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  </HEAD>
+  <BODY>
+    <nav id="navbar">
+      <header>C Documentation <span class="small">for beginners</span></header>
+      <ul>
+        <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+        <a href="#Basic_Syntax" class="nav-link"><li>Basic Syntax</li></a>
+        <a href="#Data_Types" class="nav-link"><li>Data Types</li></a>
+        <a href="#Operators" class="nav-link"><li>Operators</li></a>
+        <a href="#Input_And_Output" class="nav-link"><li>Input And Output</li></a>
+        <a href="#Control_Flow" class="nav-link"><li>Control Flow</li></a>
+        <a href="#Functions" class="nav-link"><li>Functions</li></a>
+        <a href="#Pointers_And_Arrays" class="nav-link"><li>Pointers And Arrays</li></a>
+        <a href="#Strings" class="nav-link"><li>Strings</li></a>
+        <a href="#structures" class="nav-link"><li>Structures</li></a>
+        <a href="#File_Handling" class="nav-link"><li>File Handling</li></a>
+        <a href="#Refrence" class="nav-link"><li>Refrence</li></a>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+        <p><strong>Introduction to Programming</strong>
+        <article>
+Programming is the process of creating instructions for computers to perform tasks. It involves writing code using a programming language, which serves as a communication medium between humans and computers. Programming allows us to solve problems, automate tasks, and build software applications.</p>
+<p>C is a popular programming language developed in the 1970s. It is known for its simplicity, efficiency, and low-level control over computer hardware. Learning C provides a strong foundation in programming concepts and enables deeper understanding of how computers work. It is widely used in system-level programming and developing high-performance applications.</p>
+<p>
+In summary, programming involves writing instructions for computers, and C is a powerful language that offers efficiency and low-level control. Learning C enhances programming skills and provides a solid understanding of computer systems.</article></p>
+      </section>
+      <section class="main-section" id="Basic_Syntax">
+        <header><b>Basic Syntax</b></header>
+        <p>Basic Syntax in C:
+<aside>
+<ul><li>
+Comments: Use // for single-line comments and /* */ for multi-line comments.</li>
+<code> /**<br>
+        &nbsp;*<br>
+        &nbsp;*/
+        </code>
+
+<li>Functions: Functions are blocks of code that perform specific tasks. They are contained in curly brackets, have a name, optional parameters, and a return type (if any).</li>
+
+<li>Main Function: The main() function is the entry point of a C program. It is the starting point of program execution and is a requirement for all C programs.</li><br><span>SYNTAZ<br><br>
+<code> int main (void) </code>
+</span><br>
+<li>Statements and Expressions: Statements are instructions that perform actions and end with a semicolon (;). Expressions create a value by combining variables, constants, and operators.</li>
+<li>Operators: Operators manipulate values and variables. Arithmetic, assignment, comparison, and logical operators are among them.</li>
+
+<span> FOR EXAMPLE,<br><br>
+  <code> Printf("Hello world\n");
+    </code>
+    </span><br>
+
+<li>Control structures: Control structures decide how an operation will proceed. For making decisions, use if-else statements, for, while, and do-while loops for repetition, and switch statements for several possibilities.</li>
+
+<li>Arrays: Arrays are collections of elements of the same data type. They use an index that starts at 0 and hold numerous values under a single variable name.</li>
+<span>
+  for Example<br>
+  <code>int myNumbers[] = {25, 50, 75, 100};</code>
+</span>
+
+<li>Pointers: Pointers enable complex activities like passing variables by reference and the dynamic allocation of memory by storing memory addresses. They are identified by the sign *.</li></ul>
+<span>
+  pointers are used to store a specific data to a specific locartion for Example <code>int *ptr = arr;</code>
+</span>
+</aside>
+<br>
+It is essential to comprehend and use these fundamental syntactic constructs when developing valid and useful C code.<br><br>
+As a developer, it's important to grasp these concepts to effectively communicate with the computer and write efficient programs.
+</p>
+        </section>
+      <section class="main-section" id="Data_Types">
+        <header><b>Data Types</b></header>
+        <p>Data Types in C<br>
+Whole numbers (integers) without decimal points are stored as ints. as in 5, -10, and 0.<br>
+<ul><li>float: Used to store decimalized floating-point numbers. For instance: 3.14, -0.5, 2.0.</li>
+<li>char: A type of storage for distinct characters. 'A', 'b', and '$', for instance.
+</li>
+<li>Float and double are comparable, but double offers more precision for floating-point values. For instance: 3.14159, -0.25.
+</li>
+<li>Boolean values, which may be either true or false, are stored using the bool type. Instance: 1 (yes), 0 (false).
+</li>
+used to store tiny numbers, in brief. Ex: 100, -50.
+
+big integers are stored in long format. For instance: 1000000, -500000.</li>
+<li>Unsigned: A data type's positive values are represented by unsigned. Unsigned char and int, for instance.</li></ul>
+</p>
+      </section>
+     
+      <section class="main-section" id="Operators">
+        <header><b>Operators</b></header>
+        <p>
+          Operators in C are symbols that perform operations on variables and values. Arithmetic operators (+, -, *, /, %) are used for mathematical calculations. Assignment operators (=, +=, -=, *=, /=) assign values to variables. Comparison operators (==, !=, >, <, >=, <=) compare values and return true or false. Logical operators (&&, ||, !) combine conditions and evaluate to true or false. Bitwise operators (&, |, ^, ~, <<, >>) manipulate individual bits of values. Increment (++) and decrement (--) operators increase or decrease the value of a variable by 1. Operators provide a powerful way to perform calculations, make decisions, and manipulate data in C programming.</p>
+      </section>
+      <section class="main-section" id="Input_And_Output">
+        <header><b>Input and Output</b></header>
+        <p>Reading data from the user or a file and displaying or writing data to the screen or a file are referred to as input and output (I/O) respectively in the C programming language. I/O operation capabilities are available in C. The main input and output functions are as follows:<br>
+
+<ul><li>printf(): Used to display output on the screen. Text, variables, and expressions are formatted and printed.</li>
+
+<li>scanf(): Used to read input from the user. It enables the user to enter values for the software to accept.</li>
+
+<li>getchar(): Reads a single character from the user.</li>
+
+<li>putchar(): Displays a single character on the screen.</li>
+
+<li>fprintf(): Writes formatted output to a file.</li>
+
+<li>fscanf(): Reads formatted input from a file.</li></ul>
+
+You must include the proper header file in order to utilize these functions.</p>
+      </section>
+      <section class="main-section" id="Control_Flow">
+        <header><b>Control Flow</b></header>
+        <p>The order in which statements are executed in C is governed by control flow. It enables computers to make judgments and repeat certain code blocks. Important C control flow constructs include:<br>
+
+<ul><li>If-else: Permits the execution of code conditionally depending on a certain condition.</li>
+
+<li>switch: Based on various cases, evaluates an expression and runs the corresponding code block.</li>
+
+<li>for: Repeats a code block a certain number of times with initialization, condition, increment, and decrement specified.</li>
+
+<li>while: Recursively runs a section of code until a certain condition is satisfied.</li>
+
+<li>Do-while: Similar to the while loop, but before checking the condition, the code block is run at least once.</li>
+
+<li>break: Stops a loop or switch statement from running.</li></ul>
+
+continues skipping the rest of the loop's code.</p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header><b>Functions</b></header>
+        <p>In C, functions are self-contained units of code that do particular tasks. They provide structure, modularization, and code reuse. Important details concerning C functions include:<br>
+
+<ul><li>Function Declaration: When defining a function, its return type, name, and any optional arguments are enclosed in parentheses.</li>
+
+<li>Function Definition: The actual code that runs when a function is called is included in the body of the function. It is contained by curved braces.</li>
+
+<li>Return Statement: Using the return statement, functions can return a value. The kind of value returned depends on the return type given in the function declaration. Functions that don't return a value are designated as void.</li>
+
+<li>Function Invocation: To invoke (call) a function, use its name in parentheses. Functions accept arguments as input that can be processed.</li>
+Functions may be provided with parameters (also known as arguments) that serve as placeholders for values delivered during function calls. Different data formats can be used for parameters.</li>
+
+<li>Function Prototypes: Prior to invoking a function, a function prototype is frequently declared. A function prototype gives the compiler access to the function's type checking capabilities as well as the function's signature.</li>
+
+<li>Recursion: Function calls can become recursive if a function calls itself. Recursive functions are helpful for solving issues that can be divided into more manageable, related subissues.</li></ul>
+
+In order to organize code and encourage code reuse, functions are essential. They enable more effective problem-solving, better structure, and more readable code.</p>
+      </section>
+      <section class="main-section" id="Pointers_And_Arrays">
+        <header><b>Pointers and Arrays</b></header>
+        <p>Pointers: Memory addresses are stored in pointers, which are variables. They enable immediate access to and control over memory. When declaring pointers, the * sign is used. They can be used for working with complicated data structures, passing variables by reference, and dynamic memory allocation. Dereferencing (accessing the value at the memory location), pointer arithmetic, and allocating addresses for pointers are a few examples of pointer operations.<br><br>
+Collections of the same data type components are called arrays. They offer a means of storing and retrieving many values from a single variable. Access to array items begins with indexing at 0. Pointers can be used to allocate static or dynamic arrays. Data structures like stacks and queues can be implemented using arrays for data storage and manipulation, iterating over items, and other purposes.<br><br>
+As arrays are internally represented as pointers to the first element, pointers and arrays are closely linked concepts. Pointers may be effectively utilized to access and modify array items. For effective memory management, dealing with complicated data structures, and enhancing the efficiency of C programs, an understanding of pointers and arrays is essential.</p>
+      </section>
+      <section class="main-section" id="Strings">
+        <header><b>Strings</b></header>
+        <p>In C, strings are collections of characters that are stored as arrays and are ended by the null character ('0'). The main ideas about strings in C are as follows:<br>
+
+The maximum string size is 20, therefore strings can be defined as character arrays using the syntax char str[20].<br>
+
+<ul><li>Initializing strings: Strings can be initialized at declaration time, for example, by setting char str[] = "Hello".</li>
+
+<li>String Input: Use methods like scanf() or fgets() to read strings from the user. The character null is added automatically.</li>
+<li>String Output: Functions like printf() and puts() can be used to show strings.</li>
+
+<li>String Manipulation: The string.h library in C has a number of methods for manipulating strings, including strcpy(), strcat(), strlen(), and strcmp(), which are used for copying, concatenating, calculating length, and comparing strings.</li>
+
+<li>Accessing Characters: The index can be used to access specific characters inside a string; for example, str[0] indicates the first character.</li>
+
+<li>String Termination: Strings must end with a null character, or '0'. The string's end is indicated by the null character.</li></ul>
+
+Functions for processing strings include strncpy(), strncat(), snprintf(), and others that can handle string operations with length restrictions.<br>
+
+Working with text-based data, input/output procedures, string manipulation, and user interaction all need an understanding of strings in C.</p>
+      </section>
+      <section class="main-section" id="structures">
+        <header><b>Structures</b></header>
+        <p>C structures let you create unique data types that may store a variety of connected variables of various sorts. The main ideas concerning structures are as follows:<br>
+
+<ul><li>Structure Definition: Structures are defined using the "struct" keyword, followed by a name and a set of variables (members) enclosed in curly braces {}.</li>
+
+<li>Member Access: Members of a structure are accessed using the dot (.) operator, e.g., structName.memberName.</li>
+
+<li>Structure Initialization: Structures can be initialized at declaration using curly braces {} and providing values for the members.</li>
+
+<li>Nested Structures: Structures can be nested within other structures, allowing for complex data organization.<li>
+<li>Structure Size: A structure's size is equal to the sum of the sizes of each of its constituent parts. The size of a structure may be found using the sizeof() operator.</li>
+
+<li>Structure passing: Structures can be referenced or supplied as a value to functions. When passing by reference (using pointers), the original structure can be changed.</li>
+
+<li>Structure arrays: To store several instances of a structure, you may build arrays of structures.</li>
+
+<li>typedef: To make a structure's usage easier, you may give it a unique type name with the typedef keyword.</li></ul>
+
+Using structures, you may organize your code better, construct complicated data types, and group together similar data. They are often used in C to create data structures like linked lists, store data with various properties, and represent records.</p>
+      </section>
+  
+      <section class="main-section" id="File_Handling">
+         <header><b>File Handling</b></header>
+        <p>Reading from and writing to files are both part of file management in C. The main ideas of file management in C are as follows:
+
+<ul><li>File Pointers: File pointers, which are variables that track the current position in a file, are necessary for file management.</li>
+
+<li>Use the fopen() function to open a file by providing the file name and the desired mode (read, write, append, etc.). A file pointer is returned.</li>
+
+<li>File Closing: After performing file operations, it's crucial to use the fclose() method to shut down the file. By doing this, the file's connection to system resources is released.</li>
+
+<li>Reading Data from a File: To read data from a file, use methods like fscanf() or fgets(). These operations extract data from the file either line by line or in accordance with a predefined format.</li>
+<li>Writing to a File: Use functions like fprintf() or fputs() to write data to a file. You can use these routines to write raw strings or structured data to the file.</li>
+
+<li>Error Handling: Examine the return values of file handling routines to look for errors that occurred during file operations. Error information can also be found in the errno variable.</li>
+
+<li>File Positioning: You may navigate to certain locations inside a file and get an idea of where you are right now using functions like fseek() and ftell().</li></ul>
+
+File handling is crucial for working with persistent data, such as reading from and writing to text files, configuration files, or data storage files. It makes it possible to communicate with outside resources and maintain data consistency between program executions.</p>
+      </section>
+  
+      <section class="main-section" id="Refrence">
+        <header><b>Refrence</b></header>
+        <ul>
+          <li>To get full documentation on c programming language so as to stop being a beginner. <a href="https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170" targer="_blank" class="link" target="_blank">Microsoft</a>
+          <br><br><br><br><br><br>
+        </ul>
+      </section>
+    </main>
+  </BODY>
+</HTML>
+
+
+
