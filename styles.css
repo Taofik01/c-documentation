@@ -82,11 +82,14 @@ a:visited {
 }
 
 @media (max-width:500px ) {
+  
   body{
+  display:flex;
   font-size:15px;
   display:float;
   padding:0;
-  background-color:blue;
+  justify-content:space-between;
+  background-color:#F2F2F2;
   }
   nav{
     display:float;
