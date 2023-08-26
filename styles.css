@@ -85,6 +85,8 @@ a:visited {
   
   body{
   display:flex;
+  flex-directon:column;
+  align-items:center;
   font-size:15px;
   display:float;
   padding:0;
