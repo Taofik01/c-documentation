@@ -1,3 +1,8 @@
+html{
+  position: relative;
+}
+
+
 body{
   background-color:#F2F2F2;
   color:#262626;
@@ -46,7 +51,7 @@ font-size:30;
 main{
 width:70%;
 padding-top:40px;
-padding-left:30px;
+padding-left:45px;
 flex:3;
 right:500000px;
 margin-left:30%;
@@ -60,7 +65,7 @@ header{
   font-weight:800;
   color:#0D0D0D;
   font-family: 'Archivo', sans-serif;
-  font-size:22;
+  font-size:15px;
 }
 span{
   text-transform:lowercase;
@@ -82,12 +87,22 @@ a:visited {
   font-size:20px;
 }
 
-@media (max-width:500px ) {
+@media (min-width:500px; ) {
   body{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    background-color: blue;
+    width:100vw;
+    max-width: 100%;
   }
-
+  .head{
+    font-size:2px;
+    font-weight: 0;
+    width:100%;
+    background-color: blue !important;
+  }
+ 
   nav{
     display:float;
     font-size:2px;
@@ -106,11 +121,12 @@ a:visited {
   }
   main{
     font-size: 15px;
-    width: 63%;
-    position:absolute;
-    left:200px;
+    width:0%;
+    position:fixed;
+    left:400px;
     padding-right: 3px;
+    border:1px solid red;
   }
-  
+}
 
 ** end of undefined **
