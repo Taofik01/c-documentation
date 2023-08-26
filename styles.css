@@ -2,11 +2,11 @@ body{
   background-color:#F2F2F2;
   color:#262626;
   font-weight:300;
-  
   display:flex;
   justify-content:flex-start;
   position:relative;
   width:100vw;
+  overflow-x:hidden;
 }
 nav{
 width:30%;
@@ -91,6 +91,8 @@ a:visited {
   font-size:15px;
   display:float;
   padding:0;
+  width:100vw;
+  max-width:100%;
   justify-content:space-between;
   background-color:#F2F2F2;
   }
